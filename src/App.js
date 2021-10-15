@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import {useState, Fragment} from "react";
+import Producto from "./components/Producto";
+import Changuito from "./components/Changuito";
+
 
 function App() {
+
+  // Listado de productos con un State
+
+  const [productos, guardarProductos] = useState([
+    {id:1, articulo:"Boulevard", precio:1100},
+    {id:2, articulo:"Heist", precio:1200},
+    {id:3, articulo:"El Duelo", precio:910},
+    {id:4, articulo:"Personas Desconocidas", precio:850},
+    {id:5, articulo:"El Psicoanalista", precio:1120}
+  ]);
+
+  //State para el changuito
+    
+  const [changuito, agregarProducto] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Header />
+      <h1>Libreria El Ateneo - Compre online</h1>
+      {productos.map(producto =>
+        (
+          <Producto 
+            key = {producto.id}
+            producto = {producto}
+            productos = {productos}
+            changuito = {changuito}
+            agregarProducto = {agregarProducto}
+          /> 
+        )
+        )}
+
+
+      <Changuito 
+        changuito = {changuito}
+        agregarProducto = {agregarProducto}
+      />
+
+      <Footer />
+    </Fragment>
   );
 }
 
