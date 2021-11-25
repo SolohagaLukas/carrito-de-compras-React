@@ -1,0 +1,22 @@
+footer{
+    background-color: #74113f;
+    color: white;
+}
+
+.icono-footer{
+    height: 26px;
+    width: 50px;
+    margin: 0px 5px 5px 0px;
+}
+
+.div-icono-footer{
+    padding-left: 50px;
+}
+
+.footer-title{
+    display: block;
+    margin: 0px 0px 20px 0px;
+    padding-left:50px;
+    padding-top: 20px;
+}
+

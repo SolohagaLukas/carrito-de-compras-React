@@ -24,6 +24,7 @@ function App() {
   return (
     <Fragment>
       <Header />
+      
       <h1>Libreria El Ateneo - Compre online</h1>
       {productos.map(producto =>
         (

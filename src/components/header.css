@@ -1,0 +1,37 @@
+.bienvenida{
+    background-color: #74113f;
+    color: white;
+    
+}
+
+#titulo-bienvenida{
+    text-align: center;
+}
+
+.login{
+    color: #74113f;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;    
+}
+
+.contactos{
+    font-size: 14px ;
+}
+
+.dropdown-menu{
+    background-color: #74113f;
+    color: black;
+}
+.dropdown-item{
+    color:white;
+}
+
+.d-flex{
+    padding-left: 100px;
+}
+
+.logo{
+    width: 150px;
+        
+}
